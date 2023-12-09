@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="border: 2px solid;height: 100%;">
+    <thead>
+        <h1 style="background-color: red;color:white;">JobSearch.com</h1>
+    </thead>
+    <h2>Create Your Account</h2>
+    <p style="color: red;"><sup>*</sup>Required information</p>
+    <fieldset style="background-color: lightgray;">
+    <table align="center">
+    <h3 style="background-color: darkgrey;">Basic Information</h3>
+    <form action="" method="post" style="background-color: lightgrey;" autocomplete="on">
+            <tr>
+                <td align="right"><label for="Email">Email  <sup style="color: red;">*</sup></label></td>
+                <td><input type="Email" id="Email" required autofocus placeholder="Enter The Email" style="width:230px;"></td>
+            </tr>
+            <tr>
+                <td align="right"><label for="Password">Password <sup style="color: red;">*</sup></label></td>
+                <td><input type="password" id="Password" autofocus placeholder="Enter the password" pattern="Number" title="numbers only"  style="width:230px;"></td>
+            </tr>
+            <tr>
+                <td align="right"><label for="Retype">Retype Password  <sup style="color: red;">*</sup></label></td>
+                <td><input type="password" id="Retype" placeholder="Re enter the password" pattern="Number" title="numbers only"  style="width:230px;"></td>
+            </tr>
+            <tr>
+                <td align="right"><label for="Full NAme">First Name <sup style="color: red;">*</sup></label></td>
+                <td><input type="text" id="Full NAme" placeholder="Enter your Name" autofocus required  style="width:230px;"></td>
+            </tr>
+            <tr>
+                <td align="right"><label for="last">Last Name  <sup style="color: red;">*</sup></label></td>
+                <td><input type="text" id="last" placeholder="Enter the Lastname" required  style="width:230px;"></td>
+            </tr>
+            <tr>
+                <td align="right"><label for="phn">Phone Number  <sup style="color: red;">*</sup></label></td>
+                <td><input type="tel" id="phn" name="phn" placeholder="Enter 10 Digit Number" minlength="10" maxlength="10" required  style="width:230px;"></td>
+            </tr>
+            <tr>
+                <td align="right"><label for="add">Address  <sup style="color: red;">*</sup></label></td>
+                <td><input type="text" id="add" placeholder="Enter your current address" required  style="width:230px;"></td>
+            </tr>
+            <tr>
+                <td align="right"><label for="city">City  <sup style="color: red;">*</sup></label></td>
+                <td><input type="text" id="city" placeholder="Enter The City" required  style="width:230px;"></td>
+            </tr>
+            <tr>
+                <td align="right"><label for="ap">Province<sup style="color: red;">*</sup></label></td>
+                <td>
+                <select name="ap" id="ap">
+                    <option value="ap">Andhra Pradesh</option>
+                    <option value="ap">Telengana</option>
+                </select>
+            </td>
+            </tr>
+            <tr>
+                <td align="right"><label for="con">Country <sup style="color: red;">*</sup></label></td>
+                <td><input type="text" id="con" placeholder="Enter The Country" required  style="width:230px;"></td>
+            </tr>
+        </table>
+    </fieldset>
+    <br>
+        <div>
+            <fieldset style="background-color: lightgrey;">
+            <h3 style="background-color: darkgray;">Education</h3>
+            <table align="center">
+                <tr>
+                    <td align="right"><label for="scl">School  <sup style="color: red;">*</sup></label></td>
+                    <td><input type="text" id="scl" placeholder="Enter The School"  style="width:230px;"></td>
+                </tr>
+                <tr>
+                    <td align="right"><label for="pgm">Program  <sup style="color: red;">*</sup></label></td>
+                    <td><input type="text" id="pgm" placeholder="Enter The Program"  style="width:230px;"></td>
+                    <tr>
+                        <td align="right"><label for="Education level">Education level <sup style="color: red;">*</sup></label>
+                            <td>
+                                <fieldset>
+                                    <legend>Education Status</legend>
+                                    <label for="es"></label>
+                                    <input type="radio" id="es" name="es">
+                                    <label for="es">Graduated</label>
+                                    <br>
+                                    <input type="radio" id="es" name="es">
+                                    <label for="es">current enrolled</label>
+                                    <br>
+                                    <input type="radio" id="es" name="es">
+                                    <label for="es">Did not Graduated</label>
+                                </fieldset>
+                            </td>
+                    </tr>
+        <tr>
+            <td>Graduation Date <sup style="color: red;">*</sup></td>
+            <td><input type="text" required placeholder="Enter The Date"  style="width:230px;"></td>
+        </tr>
+        </table>
+        </div>
+    </fieldset>
+    <br>
+    <fieldset style="background-color: lightgrey;">
+        <h3 style="background-color:darkgray">Work Experience</h3>
+        <table align="center">
+           <tr>
+            <td><label for="emp">Employer:</label></td>
+            <td><input type="text" id="emp" placeholder="Enter The Emp Name"  style="width:230px;"></td>
+           </tr>
+           <tr>
+            <td><label for="jb">Job Title:</label></td>
+            <td><input type="text" id="jb" placeholder="Title Here"  style="width:230px;"></td>
+           </tr>
+           <tr>
+            <td><label for="jd">Job Duty:</label></td>
+            <td><textarea name="jd" id="jd" cols="30" rows="5" placeholder="Duty here"></textarea></td>
+           </tr>
+           <tr>
+            <td><label for="yy">Worked Year:</label></td>
+            <td><input type="number"  style="width:230px;"></td>
+           </tr>
+        </table>
+    </fieldset>
+    <br>
+    <fieldset style="background-color: lightgrey;">
+        <h3 style="background-color: darkgrey;">Attachments</h3>
+        <table align="center">
+            <tr>
+                <td><label for="at">Attachments:</label></td>
+                <td><input type="file"  style="width:230px;"></td>
+            </tr>
+        </table>
+    </fieldset>
+    </form>
+    <center>
+        <button style="background-color: rgb(196, 4, 4);color: white;" id="Reset" name="Reset">Reset</button>
+        <button style="background-color: rgb(192, 5, 5);color: white;" id="Apply" name="Apply">Apply</button>
+    </center>
+</body>
+</html>
